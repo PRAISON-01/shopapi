@@ -22,7 +22,7 @@ urlpatterns = [
 ]
 
 urlpatterns += router.urls
-
+# api/v1/**
 
 # urlpatterns = [
 #     path('products/', product_list, name='product_list'),

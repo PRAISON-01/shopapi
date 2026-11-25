@@ -96,3 +96,4 @@ class Review(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     rating = models.PositiveSmallIntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
     comment = models.TextField()
+

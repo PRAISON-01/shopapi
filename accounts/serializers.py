@@ -25,7 +25,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 class AddressSerializer(serializers.ModelSerializer):
     class Meta:
         model = Address
-        exclude = ['user']
         # fields = ['user', 'label', 'recipient_name',  'address_one', 'address_two', 'city', 'state', 'country', 'postal_code', 'is_default']
-        read_only = ['user']
+        exclude = ['user']
+        # read_only = ['user']
 

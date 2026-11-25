@@ -54,6 +54,9 @@ class ProductReviewSerializer(serializers.ModelSerializer):
         product_id = self.context['product']
         user = self.context['user']
         return Review.objects.create(user=user, product_id=product_id, **validated_data)
+
+
+
 """
 Difference between serializers and Model Serializers
     Model Serializers allows you to base the validations and constraints based off existing models allows for reusablilty
